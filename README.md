@@ -24,7 +24,7 @@ I am building this project to master the following skills:
 This repository is being built in phases.
 
 - [x] **Phase 1: Application Development** (Create simple Flask App)
-- [ ] **Phase 2: Dockerization** (Create Dockerfile & Optimize Image)
+- [x] **Phase 2: Dockerization** (Create Dockerfile & Optimize Image)
 - [ ] **Phase 3: Infrastructure as Code** (Provision EC2 with Terraform)
 - [ ] **Phase 4: Orchestration** (Deploy on Kubernetes)
 - [ ] **Phase 5: CI/CD Pipeline** (Automate with GitHub Actions)
