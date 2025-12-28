@@ -25,7 +25,7 @@ This repository is being built in phases.
 
 - [x] **Phase 1: Application Development** (Create simple Flask App)
 - [x] **Phase 2: Dockerization** (Create Dockerfile & Optimize Image)
-- [ ] **Phase 3: Infrastructure as Code** (Provision EC2 with Terraform)
+- [X] **Phase 3: Infrastructure as Code** (Provision EC2 with Terraform)
 - [ ] **Phase 4: Orchestration** (Deploy on Kubernetes)
 - [ ] **Phase 5: CI/CD Pipeline** (Automate with GitHub Actions)
 
