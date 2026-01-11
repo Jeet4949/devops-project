@@ -1,39 +1,26 @@
-# 🚀 End-to-End DevOps Project: Cloud-Native Flask Application
+# 🚀 End-to-End DevOps Lifecycle Project
 
-## 📖 Project Overview
-This project demonstrates a complete DevOps lifecycle for a simple Python web application. The goal is to move from manual deployment to a fully automated **CI/CD pipeline** using modern cloud-native tools.
+A complete CI/CD pipeline implementation using **Docker**, **Jenkins**, and **Kubernetes**. This project automates the entire software delivery process—from code commit to production deployment.
 
-I am building this project to master the following skills:
-- **Containerization** (Docker)
-- **Infrastructure as Code** (Terraform)
-- **Container Orchestration** (Kubernetes/K3s)
-- **Automated Deployment** (GitHub Actions / CI/CD)
+## 🏗️ Architecture
 
----
 
-## 🛠️ Tech Stack
-- **Application:** Python (Flask)
-- **Containerization:** Docker
-- **Infrastructure:** AWS (EC2)
-- **IaC:** Terraform
-- **Orchestration:** Kubernetes (K3s)
+1.  **Code:** Developer pushes code to GitHub.
+2.  **Build (CI):** Jenkins detects the change, pulls code, and builds a Docker image.
+3.  **Ship:** Jenkins pushes the image to Docker Hub.
+4.  **Deploy (CD):** Kubernetes (Minikube) pulls the image and runs it as a scalable service.
 
----
+## 🛠️ Tools Used
+* **Version Control:** Git & GitHub
+* **Containerization:** Docker
+* **CI Server:** Jenkins (Running in Docker)
+* **Orchestration:** Kubernetes (Minikube)
+* **Scripting:** Groovy (Jenkins Pipeline), YAML (K8s Manifests)
 
-## 🗺️ Project Roadmap
-This repository is being built in phases.
-
-- [x] **Phase 1: Application Development** (Create simple Flask App)
-- [x] **Phase 2: Dockerization** (Create Dockerfile & Optimize Image)
-- [ ] **Phase 3: Infrastructure as Code** (Provision EC2 with Terraform)
-- [ ] **Phase 4: Orchestration** (Deploy on Kubernetes)
-- [ ] **Phase 5: CI/CD Pipeline** (Automate with GitHub Actions)
-
----
-
-## 🏃‍♂️ How to Run Locally (Phase 1)
-To run the application manually on your machine:
-
-1. **Clone the repository:**
-   ```bash
-   git clone [https://github.com/Jeet4949/devops-project.git](https://github.com/Jeet4949/devops-project.git)
+## 📂 Project Structure
+```text
+├── Dockerfile          # Blueprint for the Python/Flask App
+├── Jenkinsfile         # The CI Pipeline script (Groovy)
+├── app.py              # Simple Python Flask Application
+├── deployment.yaml     # K8s Deployment Manifest (High Availability)
+└── service.yaml        # K8s Service Manifest (Load Balancer/Network)
