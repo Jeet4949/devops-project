@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-devops-app
+spec:
+  replicas: 2  # We want 2 Pods running for high availability
+  selector:
+    matchLabels:
+      app: my-devops-app
+  template:
+    metadata:
+      labels:
+        app: my-devops-app
+    spec:
+      containers:
+      - name: my-devops-container
+        image: jeet4949/my-devops-app:v1
+        ports:
+        - containerPort: 80
